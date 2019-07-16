@@ -1,0 +1,7 @@
+﻿.\venv\Scripts\activate.bat
+cd example
+scrapy crawl joke -o joke.json
+notepad joke.json
+..\venv\Scripts\deactivate.bat
+ehco 'mysql和mongodb位于172.24.2.34上，爬取的数据都在数据库joke里面的jokes_xujiaxing表/集合中'
+pause
